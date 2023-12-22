@@ -78,7 +78,7 @@ Workspaces Collection
   employees: Array of ObjectIds, references user, default empty array
 
 
-Front end structure:
+Front-end Structure:
 ---------------------
 The front end consists of 4 main pages: the login, signup, admin panel, user panel.
 Each page has components the following components are  used:  
