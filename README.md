@@ -76,12 +76,36 @@ Workspaces Collection
   _id: String, required
   admin: ObjectId, required, references user
   employees: Array of ObjectIds, references user, default empty array
-  
+
+
+Front end structure:
+---------------------
+The front end consists of 4 main pages: the login, signup, admin panel, user panel.
+Each page has components the following components are  used:  
+ Login Page:
+    - login component: has input fields and submission button
+
+ Signup Page:
+   - signup component: input fields and submission button
+
+Admin Page:
+  - Sidebar component: side bar that controls navigation
+  - Users table: table that handles workspace management and user deletion from workspace
+
+User Page:
+  - Sidebar component: controls navigation
+  - Task form component: Form that enables the user to assign tasks for oneself and others
+  - Task List component: A table from material ui that has the tasks listed, contains checkboxes and required fields
+  - Speech recognition component: A button and transcript that enables the user to conduct commands using voice control
+    
+
 Third-Party Libraries and Tools:
 --------------------------------
 WebKitSpeechRecognition: A chrome library for speech recognition to implement NLP to handle commands.
 Nest js: Used to handle the back end .
 Mongoose: An ODM library for MongoDB.
+Axios: Used to call the backend apis from the front end.
+React js: a library to handle  the front end.
 Joi: Used to ensure password complexity
 Bootstrap: Imported some components and adjusted them to beautify the UI
 Material UI: for built in UI components
