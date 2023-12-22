@@ -133,11 +133,6 @@ function SpeechRec({handleTaskCreation}) {
     }
     }
 
-    const handleSaveNote = () => {
-    setSavedNotes([...savedNotes, note])
-    setNote('')
-    }
-
     return (
     <>
         <div className={styles.container}>

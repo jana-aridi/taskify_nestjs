@@ -1,10 +1,8 @@
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import mongoose from 'mongoose';
-import { User } from 'src/user/schemas/user.schema';
 import { Workspace } from 'src/workspace/schemas/workspace.schema';
 import { Task } from './schemas/task.schema';
-import { Subtask, SubtaskSchema } from './schemas/subtask.schema';
 
 @Injectable()
 export class TaskService {
