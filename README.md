@@ -1,8 +1,4 @@
 # taskify_nest
-
-Demo:
-------
-
  
 Project Setup Instructions:
 ---------------------------
