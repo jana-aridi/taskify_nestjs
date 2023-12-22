@@ -1,0 +1,25 @@
+.formContainer {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between; 
+    /* margin-bottom: 20px; */
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.formControl {
+    min-width: 150px;
+    width: 100%;
+}
+ 
+
+.submitButton {
+    background-color: black;
+    color: white;
+}

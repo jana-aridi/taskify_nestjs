@@ -1,0 +1,105 @@
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 100vh;
+  }
+  
+
+.rightContainer {
+    position: relative;
+    padding: 2rem;
+    flex-grow: 1;
+}
+
+.rightContainer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;  
+    background-image: url('../../Assets/Images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;  
+    pointer-events: none;  
+}
+
+.rightContainer > * {
+    position: relative;
+    z-index: 1;  
+}
+  
+.mainContainer h1 {
+    color: black;
+}
+ 
+
+.rightContainer_join {
+    padding: 20px;
+    width: 100%; 
+}
+
+.taskInput {
+    margin-bottom: -40%;
+}
+
+.addButton {
+    background: none;
+    border: none;
+    font-size: 3rem;  
+    cursor: pointer;   
+}
+
+.addButton:hover {
+    opacity: 50%;
+}
+   
+.addButtonDiv {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.addButtonDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+  
+.joinText {
+cursor: pointer;
+margin-top: 10px; 
+}
+
+.notfound {
+    margin-top: 20%;
+}
+ 
+ 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+.workspace {
+    margin-top: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px; 
+}
+
+.workspace span{
+    /* color: #8fB8CA;  */
+    font-weight: bold;
+}
+
+.table {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    width: 100%; 
+    margin: 0 auto;  
+    padding: 2rem; 
+}
+  

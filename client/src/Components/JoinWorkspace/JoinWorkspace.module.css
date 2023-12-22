@@ -1,0 +1,66 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.modalContent {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    z-index: 11;
+}
+
+.closeButton {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.closeButton:hover {
+    opacity: 0.75;
+}
+
+.formControl {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+}
+
+.submitButton {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+.logo {
+    display: block;
+    margin: 20px 20px 20px -30px; 
+    max-width: 100px; 
+    margin-left: 170px;
+}
+  
+.formControl {
+    width: 100%;  
+    margin-top: 10px;  
+}
+ 

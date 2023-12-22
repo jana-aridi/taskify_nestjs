@@ -1,0 +1,16 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 150vh;
+}
+
+.listTitle {
+    color: black;
+    font-weight: bold;
+}
+
+ListSubheader {
+    color: black;
+    font-weight: bold;
+}

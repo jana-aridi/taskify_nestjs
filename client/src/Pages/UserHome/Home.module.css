@@ -1,0 +1,138 @@
+.mainContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; 
+    width: 100%;
+    height: 100%;
+}
+
+
+.mainContainer h1 {
+    color: black;
+}
+
+
+.rightContainer {
+    position: relative;
+    padding: 2rem;
+    flex-grow: 1;
+}
+
+.rightContainer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;  
+    background-image: url('../../Assets/Images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;  
+    pointer-events: none;  
+}
+
+.rightContainer > * {
+    position: relative;
+    z-index: 1;  
+}
+
+.rightContainer_join {
+    position: relative;
+    padding: 2rem;
+    flex-grow: 1;
+}
+
+.rightContainer_join::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;  
+    background-image: url('../../Assets/Images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;  
+    pointer-events: none;  
+}
+
+.rightContainer_join > * {
+    position: relative;
+    z-index: 1;  
+}
+
+
+.taskInput {
+    
+    margin-bottom: -40%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.addButton {
+    background: none;
+    border: none;
+    font-size: 3rem;  
+    cursor: pointer;   
+}
+
+.addButton:hover {
+    opacity: 50%;
+}
+   
+.addButtonDiv {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.addButtonDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+  
+.joinText {
+    z-index: 1;
+    cursor: pointer;
+    margin-top: 10px; 
+}
+
+.notfound {
+    margin-top: 20%;
+}
+
+.modalBackdrop {
+    position: fixed;  
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh;  
+    background: rgba(0, 0, 0, 0.5);  
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    z-index: 1050;  
+}
+  
+.joinWorkspaceForm {
+    width: 30%;  
+    padding: 2rem;
+    background: #fff; 
+    border-radius: 8px;  
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);  
+    z-index: 2; 
+}
+
+.sr {
+    width: 50px;
+    height: 50px;
+}
